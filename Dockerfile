@@ -17,7 +17,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copia el archivo JAR de tu aplicación al directorio de trabajo
-COPY --from=build /app/target/Despliegue-App-Spring-0.0.1-SNAPSHOT.jar api.jar
+COPY --from=build /app/target/ProyectoCI-CD-0.0.1-SNAPSHOT.jar api.jar
 
 
 # Exponer el puerto que utilizará la aplicación
